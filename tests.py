@@ -10,7 +10,6 @@ class QuickTest(unittest.TestCase):
         )
         self.addCleanup(server.kill)
         self.driver = webdriver.Firefox()
-        self.driver.implicitly_wait(1)
         self.addCleanup(self.driver.quit)
 
 
