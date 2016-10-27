@@ -27,7 +27,7 @@ class QuickTest(unittest.TestCase):
                 self.driver.find_element_by_tag_name('h1').text,
                 'Index page'
             )
-            self.driver.find_element_by_link_text('page 2').click()
+            self.driver.find_element_by_css_selector('#page2').click()
             self.assertEqual(
                 self.driver.find_element_by_tag_name('h1').text,
                 'Page 2'
