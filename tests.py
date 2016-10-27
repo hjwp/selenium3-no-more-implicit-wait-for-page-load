@@ -22,18 +22,16 @@ class QuickTest(unittest.TestCase):
                 self.driver.find_element_by_tag_name('h1').text,
                 'Page 1'
             )
-            # self.driver.find_element_by_css_selector('#page2').click()
             self.driver.find_element_by_link_text('page 2').click()
             self.assertEqual(
                 self.driver.find_element_by_tag_name('h1').text,
                 'Page 2'
             )
-            self.driver.find_element_by_link_text('page 3').click()
+            self.driver.find_element_by_css_selector('#page3').click()
             self.assertEqual(
                 self.driver.find_element_by_tag_name('h1').text,
                 'Page 3'
             )
-            # self.driver.find_element_by_link_text('index page').click()
             self.driver.find_element_by_link_text('page 1').click()
 
 
