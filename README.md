@@ -9,4 +9,4 @@ To run the repro:
     python tests.py
     
 * See commit history if intereseted, can switch back to all hyperlinks, see test run to completion, consistently
-* Can also switch back to Selenium 2 with a `pip install 'selenium<3'` and see it run to completion consistenyly with form submits (requires firefox 45 esr)
+* Can also switch back to Selenium 2 with a `pip install 'selenium<3'` and see it run to completion consistently with form submits (requires firefox 45 esr)
