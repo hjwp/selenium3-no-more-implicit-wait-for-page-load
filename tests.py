@@ -16,7 +16,7 @@ class QuickTest(unittest.TestCase):
 
     def test_clicking_around_fast(self):
         self.driver.get('http://localhost:5000')
-        for i in range(1, 101):
+        for i in range(1, 21):
             print('loop', i)
             self.assertEqual(
                 self.driver.find_element_by_tag_name('h1').text,
